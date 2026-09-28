@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SpotGo helps drivers find and reserve parking in seconds while giving Parking Admins real-time occupancy insights, pricing control, and revenue analytics." />
+  <title>SpotGo – Smart Parking</title>
+  <link rel="icon" type="image/png" href="assets/images/spotgo-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+
+      <a href="#hero" class="logo">
+        <img src="assets/images/spotgo-logo.png" alt="SpotGo Logo" class="logo-img" />
+        <h3 style="color: rgb(30, 63, 168);">SpotGo</h3>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#drivers">For Drivers</a></li>
+        <li><a href="#p-admins">For Parking Admins</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon" id="themeIcon"></i>
+        </button>
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-btn" id="langBtn" aria-label="Select language" aria-expanded="false" aria-haspopup="true">
+            <span class="lang-icon"><i class="fa-solid fa-globe"></i></span>
+            <span class="lang-current">EN</span>
+            <i class="fa-solid fa-chevron-down lang-arrow"></i>
+          </button>
+          <div class="lang-menu" id="langMenu" role="menu">
+            <button class="lang-option active" data-lang="en" role="menuitem">EN — English</button>
+            <button class="lang-option" data-lang="es" role="menuitem">ES — Español</button>
+            <button class="lang-option" data-lang="pt" role="menuitem">PT — Português</button>
+            <button class="lang-option" data-lang="fr" role="menuitem">FR — Français</button>
+          </div>
+        </div>
+        <a href="https://spotgo-frontend.vercel.app" class="btn-cta">Open app <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(255, 255, 255);"></i></a>
+      </div>
+
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#drivers">For Drivers</a>
+      <a href="#p-admins">For Parking Admins</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <div class="mobile-actions">
+        <div class="mobile-settings">
+          <button class="theme-toggle mobile-theme-toggle" id="mobileThemeToggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-moon" id="mobileThemeIcon"></i>
+          </button>
+          <div class="lang-dropdown mobile-lang-dropdown" id="mobileLangDropdown">
+            <button class="lang-btn" id="mobileLangBtn" aria-label="Select language" aria-expanded="false" aria-haspopup="true">
+              <span class="lang-icon"><i class="fa-solid fa-globe"></i></span>
+              <span class="lang-current">EN</span>
+              <i class="fa-solid fa-chevron-down lang-arrow"></i>
+            </button>
+            <div class="lang-menu mobile-lang-menu" id="mobileLangMenu" role="menu">
+              <button class="lang-option active" data-lang="en" role="menuitem">EN — English</button>
+              <button class="lang-option" data-lang="es" role="menuitem">ES — Español</button>
+              <button class="lang-option" data-lang="pt" role="menuitem">PT — Português</button>
+              <button class="lang-option" data-lang="fr" role="menuitem">FR — Français</button>
+            </div>
+          </div>
+        </div>
+        <div class="mobile-settings">
+            <a href="#" class="btn-cta">Open app <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(255, 255, 255);"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+
+        <div class="badge">
+            <i class="fa-solid fa-bolt" style="color: rgb(23, 57, 205);"></i>One platform &middot; Drivers & Parking Admins
+        </div>
+
+        <h1>Smart parking,<br /><em>for both sides of the <br />curb.</em></h1>
+
+        <p class="hero-sub">
+            Drivers find and reserve open spots in seconds with live IoT data.
+            Parking Admins manage spaces, monitor occupancy and grow revenue from a single dashboard.
+        </p>
+
+        <div class="hero-ctas">
+            <a href="#drivers" class="btn-primary">I'm a Driver <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(255, 255, 255);"></i></a>
+            <a href="#p-admins" class="btn-secondary">I'm a Parking Admin <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(38, 66, 126);"></i></a>
+        </div>
+
+        <div class="trust-bar">
+            <span><i class="fa-regular fa-circle-check" style="color: rgb(99, 230, 148);"></i> No setup fees</span>
+            <span><i class="fa-regular fa-circle-check" style="color: rgb(99, 230, 148);"></i> Cancel anytime</span>
+            <span><i class="fa-regular fa-circle-check" style="color: rgb(99, 230, 148);"></i> 24/7 support</span>
+        </div>
+
+        </div>
+
+        <div class="hero-visual">
+        <img src="assets/images/hero-dashboard.jpg" alt="SpotGo Dashboard" class="hero-img" />
+        </div>
+    </section>
+
+    <!-- ===== TRUSTED BAR ===== -->
+    <div class="trusted-bar">
+        <span class="trusted-label">TRUSTED BY DRIVERS & PARKING ADMINS AT</span>
+        <div class="trusted-logos">
+        <span>Aero Mall</span>
+        <span>CityPark</span>
+        <span>MetroStay</span>
+        <span>GreenLot</span>
+        <span>UrbanDrive</span>
+        <span>QuickStop</span>
+        </div>
+    </div>
+
+    <!-- ===== FOR DRIVERS ===== -->
+    <section class="drivers-section" id="drivers">
+        <div class="section-inner">
+
+        <div class="section-badge"><i class="fa-solid fa-car-side" style="color: #2563eb;"></i> For Drivers</div>
+        <h2>Park stress-free, every time</h2>
+        <p class="section-sub">
+            Cut the time you spend hunting for a spot. SpotGo brings real-time availability and
+            one-tap reservations to every driver — pricing and plans are defined by each
+            parking admin, so you always see local rates upfront.
+        </p>
+
+        <div class="drivers-grid">
+            <div class="d-card">
+            <div class="d-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <h3>Real-time availability</h3>
+            <p>Live IoT sensors show open spots across every connected lot — no more guessing.</p>
+            </div>
+            <div class="d-card">
+            <div class="d-icon"><i class="fa-solid fa-clock"></i></div>
+            <h3>Less time searching</h3>
+            <p>Reserve before you leave home and drive straight to your spot.</p>
+            </div>
+            <div class="d-card">
+            <div class="d-icon"><i class="fa-solid fa-bell"></i></div>
+            <h3>Stress-free arrivals</h3>
+            <p>Smart alerts before your time runs out — extend with a single tap.</p>
+            </div>
+            <div class="d-card">
+            <div class="d-icon"><i class="fa-solid fa-star"></i></div>
+            <h3>Favorite locations</h3>
+            <p>Save the lots you use most and rebook your usual spot instantly.</p>
+            </div>
+            <div class="d-card">
+            <div class="d-icon"><i class="fa-solid fa-key"></i></div>
+            <h3>Ease of access</h3>
+            <p>Frictionless entry and exit — your reservation is your pass, no tickets to handle.</p>
+            </div>
+            <div class="d-card">
+            <div class="d-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h3>Secure payments</h3>
+            <p>Encrypted, one-tap checkout with all major cards and wallets — at the price set by each lot.</p>
+            </div>
+        </div>
+
+        <div class="section-cta">
+            <a href="https://spotgo-frontend.vercel.app" class="btn-primary">Open the driver app <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(255, 255, 255);"></i></a>
+        </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== FOR PARKING ADMINS ===== -->
+    <section class="p-admins-section" id="p-admins">
+        <div class="section-inner">
+
+        <div class="section-badge"><i class="fa-solid fa-building"></i>For Parking Admins</div>
+        <h2>Run your parking business smarter</h2>
+        <p class="section-sub">
+            Manage every space from one dashboard. Define your own pricing, subscription
+            plans and access rules — then monitor occupancy, classify users and grow revenue
+            per spot.
+        </p>
+
+        <div class="p-admins-grid">
+            <div class="p-admin-card">
+            <div class="p-admin-icon"><i class="fa-solid fa-border-all"></i></div>
+            <h3>Space management</h3>
+            <p>Configure lots, zones and individual bays with capacity, services and operating hours.</p>
+            </div>
+            <div class="p-admin-card">
+            <div class="p-admin-icon"><i class="fa-brands fa-think-peaks"></i></div>
+            <h3>Real-time monitoring</h3>
+            <p>Track every spot's status live — occupied, reserved or available — across all your sites.</p>
+            </div>
+            <div class="p-admin-card">
+            <div class="p-admin-icon"><i class="fa-solid fa-sliders"></i></div>
+            <h3>Custom pricing & plans</h3>
+            <p>Set your own hourly rates, dynamic pricing, monthly passes and discount rules per lot.</p>
+            </div>
+            <div class="p-admin-card">
+            <div class="p-admin-icon"><i class="fa-solid fa-user-check"></i></div>
+            <h3>User classification & access</h3>
+            <p>Segment drivers (visitor, resident, employee, VIP) and define access rules for each group.</p>
+            </div>
+            <div class="p-admin-card">
+            <div class="p-admin-icon"><i class="fa-solid fa-chart-column"></i></div>
+            <h3>Analytics & reports</h3>
+            <p>Occupancy trends, peak hours and revenue breakdowns to drive better decisions.</p>
+            </div>
+            <div class="p-admin-card">
+            <div class="p-admin-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+            <h3>Revenue optimization</h3>
+            <p>Dynamic pricing suggestions and reservation flows that maximize spot turnover.</p>
+            </div>
+        </div>
+
+        <div class="section-cta">
+            <a href="#pricing" class="btn-secondary">Explore plans for Parking Admins <i class="fa-solid fa-arrow-right-to-bracket" style="color: rgb(38, 66, 126);"></i></a>
+        </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how-section" id="how-it-works">
+        <div class="section-inner">
+
+        <div class="section-badge">How it works</div>
+        <h2>Park in 3 simple steps</h2>
+
+        <div class="steps-grid">
+            <div class="step-card">
+            <span class="step-num">01</span>
+            <div class="step-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <h3>Find a spot</h3>
+            <p>Browse the live map and filter by price, services, or distance.</p>
+            </div>
+            <div class="step-card">
+            <span class="step-num">02</span>
+            <div class="step-icon"><i class="fa-solid fa-address-card"></i></div>
+            <h3>Reserve & pay</h3>
+            <p>Choose your time slot and confirm with secure one-tap payment.</p>
+            </div>
+            <div class="step-card">
+            <span class="step-num">03</span>
+            <div class="step-icon"><i class="fa-solid fa-car-side"></i></div>
+            <h3>Drive & park</h3>
+            <p>Navigate to your spot. Extend or rate your stay from the app.</p>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <div class="stats-bar">
+        <div class="stat-item">
+        <span class="stat-num">2.4M+</span>
+        <span class="stat-label">Reservations made</span>
+        </div>
+        <div class="stat-item">
+        <span class="stat-num">850+</span>
+        <span class="stat-label">Connected lots</span>
+        </div>
+        <div class="stat-item">
+        <span class="stat-num">98%</span>
+        <span class="stat-label">On-time arrivals</span>
+        </div>
+        <div class="stat-item">
+        <span class="stat-num">4.9/5</span>
+        <span class="stat-label">Average rating</span>
+        </div>
+    </div>
+
+    <!-- ===== PRICING ===== -->
+    <section class="pricing-section" id="pricing">
+        <div class="section-inner">
+
+        <div class="section-badge">Pricing</div>
+        <h2>Transparent for drivers, flexible for Parking Admins</h2>
+        <p class="section-sub">
+            Drivers always see local rates upfront — set by each parking admin. Parking Admins
+            choose a SpotGo platform plan that fits their portfolio.
+        </p>
+
+        <div class="for-drivers-label">
+            <i class="fa-solid fa-car-side"></i> FOR DRIVERS
+        </div>
+
+        <div class="driver-card">
+            <div class="driver-card-left">
+            <h3>Pricing is set by each parking admin</h3>
+            <p>SpotGo doesn't sell driver subscriptions. Hourly rates, monthly passes and discounts
+            are defined by each parking lot, so you always pay the local price — no surprise fees
+            from us. Compare options on the live map and reserve in seconds.</p>
+            <div class="driver-features">
+                <span><i class="fa-regular fa-circle-check"></i> See live rates per lot</span>
+                <span><i class="fa-regular fa-circle-check"></i> Pay only what the parking admin charges</span>
+                <span><i class="fa-regular fa-circle-check"></i> Subscribe to a lot's plan if offered</span>
+                <span><i class="fa-regular fa-circle-check"></i> No SpotGo subscription required</span>
+            </div>
+            <a href="https://spotgo-frontend.vercel.app" class="btn-primary">Find a spot near you <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="rates-box">
+            <div class="rates-title">SAMPLE LOT RATES</div>
+            <div class="rate-row">
+                <span class="lot-name">Downtown Garage A</span>
+                <span class="lot-price">S/.6.00/hr</span>
+            </div>
+            <div class="rate-row">
+                <span class="lot-name">Aero Mall North</span>
+                <span class="lot-price">S/.4.50/hr</span>
+            </div>
+            <div class="rate-row">
+                <span class="lot-name">MetroStay Lot 4</span>
+                <span class="lot-price">S/.5.20/hr</span>
+            </div>
+            <p class="rates-note">Rates shown are examples. Actual prices are set by each parking admin.</p>
+            </div>
+        </div>
+
+        <!-- FOR PARKING ADMINS -->
+        <div class="for-p-admins-label">
+            <i class="fa-solid fa-building"></i> FOR PARKING ADMINS
+        </div>
+
+        <div class="p-admins-plans-grid">
+
+            <!-- Starter -->
+            <div class="p-admin-plan-card">
+            <div class="plan-name">STARTER</div>
+            <div class="plan-price">
+                <span class="plan-amount">S/.150</span>
+                <span class="plan-per">/mo</span>
+            </div>
+            <p class="plan-tagline">Single lot, up to 50 spaces.</p>
+            <div class="plan-features">
+                <span><i class="fa-regular fa-circle-check"></i> Real-time monitoring</span>
+                <span><i class="fa-regular fa-circle-check"></i> Basic analytics</span>
+                <span><i class="fa-regular fa-circle-check"></i> Reservation management</span>
+                <span><i class="fa-regular fa-circle-check"></i> Email support</span>
+            </div>
+            <button class="btn-plan-outline">Start Starter</button>
+            </div>
+
+            <!-- Growth (featured) -->
+            <div class="p-admin-plan-card p-admin-plan-featured">
+            <div class="plan-popular-badge">Most popular</div>
+            <div class="plan-name">GROWTH</div>
+            <div class="plan-price">
+                <span class="plan-amount">S/.250</span>
+                <span class="plan-per">/mo</span>
+            </div>
+            <p class="plan-tagline">Multi-lot, up to 500 spaces.</p>
+            <div class="plan-features">
+                <span><i class="fa-regular fa-circle-check"></i> Advanced analytics & reports</span>
+                <span><i class="fa-regular fa-circle-check"></i> Dynamic pricing tools</span>
+                <span><i class="fa-regular fa-circle-check"></i> Staff roles & zones</span>
+                <span><i class="fa-regular fa-circle-check"></i> Priority support</span>
+            </div>
+            <button class="btn-plan-primary">Start Growth</button>
+            </div>
+
+            <!-- Enterprise -->
+            <div class="p-admin-plan-card">
+            <div class="plan-name">ENTERPRISE</div>
+            <div class="plan-price">
+                <span class="plan-amount plan-custom">Custom</span>
+            </div>
+            <p class="plan-tagline">Citywide & franchises.</p>
+            <div class="plan-features">
+                <span><i class="fa-regular fa-circle-check"></i> Unlimited lots & spaces</span>
+                <span><i class="fa-regular fa-circle-check"></i> Custom integrations & API</span>
+                <span><i class="fa-regular fa-circle-check"></i> Dedicated success manager</span>
+                <span><i class="fa-regular fa-circle-check"></i> SLA & onboarding</span>
+            </div>
+            <button class="btn-plan-outline">Contact sales</button>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials-section">
+        <div class="section-inner">
+
+        <div class="section-badge">Testimonials</div>
+        <h2>Loved by drivers, trusted by Parking Admins</h2>
+
+        <div class="testimonials-grid">
+
+            <div class="t-card">
+            <div class="t-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="t-quote">"I haven't circled a block in months. SpotGo finds me a spot before I even leave home."</p>
+            <div class="t-author">
+                <div class="t-avatar">M</div>
+                <div class="t-info">
+                <span class="t-name">Marta L.</span>
+                <span class="t-role">Daily commuter · Driver</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="t-card">
+            <div class="t-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="t-quote">"Occupancy across our 4 lots is finally visible in one place. Revenue per spot is up 22%."</p>
+            <div class="t-author">
+                <div class="t-avatar">A</div>
+                <div class="t-info">
+                <span class="t-name">Andrés G.</span>
+                <span class="t-role">Operations lead · CityPark</span>
+                </div>
+            </div>
+            </div>
+
+            <div class="t-card">
+            <div class="t-stars">
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p class="t-quote">"Setup took an afternoon. Our staff now spend less time on the floor and more on customers."</p>
+            <div class="t-author">
+                <div class="t-avatar">S</div>
+                <div class="t-info">
+                <span class="t-name">Sara K.</span>
+                <span class="t-role">Manager · Aero Mall Parking</span>
+                </div>
+            </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq-section" id="faq">
+        <div class="section-inner">
+
+        <div class="section-badge">FAQ</div>
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-list">
+
+            <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>How does real-time availability work?</span>
+                <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Each connected lot uses IoT ground sensors that report spot status every few seconds to our cloud, which streams updates straight to driver and Parking Admin dashboards.</p>
+            </div>
+            </div>
+
+            <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>As a driver, can I cancel a reservation?</span>
+                <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Yes. Cancellations made more than 15 minutes before your start time are fully refunded.</p>
+            </div>
+            </div>
+
+            <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>How do Parking Admins onboard their parking lots?</span>
+                <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>We provide IoT sensor kits and a guided setup. Most Parking Admins managing a single lot can go live within a day; larger portfolios get a dedicated success manager.</p>
+            </div>
+            </div>
+
+            <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>What analytics do Parking Admins get?</span>
+                <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Live occupancy, peak-hour heatmaps, revenue per spot, reservation conversion and side-by-side site comparisons — all exportable.</p>
+            </div>
+            </div>
+
+            <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <span>Do you support EV charging spots?</span>
+                <i class="fa-solid fa-plus faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+                <p>Absolutely. Drivers can filter by EV, and Parking Admins can flag and price EV-enabled bays separately.</p>
+            </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== OUR TEAM ===== -->
+    <section class="team-section" id="team">
+        <div class="section-inner">
+
+        <div class="section-badge">Our Team</div>
+        <h2>Meet the team behind SpotGo</h2>
+        <p class="section-sub">
+            Five Software Engineering students building SpotGo — combining different
+            strengths, stacks and perspectives to make smart parking happen.
+        </p>
+
+        <div class="team-grid">
+
+            <!-- Adrian -->
+            <div class="team-card">
+            <div class="team-photo-wrap">
+                <img src="assets/images/adrian-photo.png" alt="Adrian Ruiz Mideyros" class="team-photo" loading="lazy" />
+            </div>
+            <h3 class="team-name">Adrian Ruiz Mideyros</h3>
+            <span class="team-role">App &amp; Game Developer</span>
+            <p class="team-bio">Software Engineering student with experience in web and video game development, proficient in Java, C#, Python, JavaScript, C++, and SQL. Proactive and problem-solving oriented, with the ability to adapt to constantly evolving projects. Committed to continuous learning and effective collaboration in diverse team environments.</p>
+            <div class="team-tags">
+                <span>Java</span><span>C#</span><span>C++</span><span>Game Dev</span>
+            </div>
+            </div>
+
+            <!-- Nestor -->
+            <div class="team-card">
+            <div class="team-photo-wrap">
+                <img src="assets/images/nestor-photo.png" alt="Nestor Alonso Rojas Tello" class="team-photo" loading="lazy" />
+            </div>
+            <h3 class="team-name">Nestor Alonso Rojas Tello</h3>
+            <span class="team-role">Web &amp; Software Developer</span>
+            <p class="team-bio">Software Engineering student with knowledge of C++, Python, JavaScript and CSS. I consider myself collaborative and responsible, always ready to answer questions and propose solutions to any challenge.</p>
+            <div class="team-tags">
+                <span>C++</span><span>Python</span><span>JavaScript</span><span>CSS</span>
+            </div>
+            </div>
+
+            <!-- Cesar -->
+            <div class="team-card">
+            <div class="team-photo-wrap">
+                <img src="assets/images/cesar-photo.png" alt="Cesar Jair Contreras Rojas" class="team-photo" loading="lazy" />
+            </div>
+            <h3 class="team-name">Cesar Jair Contreras Rojas</h3>
+            <span class="team-role">Software Developer</span>
+            <p class="team-bio">Software Engineering student. I have practiced with Python, C++, Java and others. I consider myself responsible, collaborative, kind and willing to help my teammates — someone who strives to find solutions to problems.</p>
+            <div class="team-tags">
+                <span>Python</span><span>C++</span><span>Java</span>
+            </div>
+            </div>
+
+            <!-- Briguite -->
+            <div class="team-card">
+            <div class="team-photo-wrap">
+                <img src="assets/images/briguite-photo.png" alt="Briguite Eryka Carhuaz Centeno" class="team-photo" loading="lazy" />
+            </div>
+            <h3 class="team-name">Briguite Eryka Carhuaz Centeno</h3>
+            <span class="team-role">Frontend Design Developer</span>
+            <p class="team-bio">Software Engineering student with knowledge of Java, HTML, CSS, and JavaScript. I consider myself a responsible and collaborative person with a strong ability to learn new technologies. I enjoy working in teams, solving problems, and finding solutions that contribute to continuous improvement.</p>
+            <div class="team-tags">
+                <span>Java</span><span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            </div>
+
+            <!-- Alessandra -->
+            <div class="team-card">
+            <div class="team-photo-wrap">
+                <img src="assets/images/sofia-photo.png" alt="Sofia Alessandra Cotrina Siclla" class="team-photo" loading="lazy" />
+            </div>
+            <h3 class="team-name">Sofia Alessandra Cotrina Siclla</h3>
+            <span class="team-role">Frontend &amp; Web Developer</span>
+            <p class="team-bio">Software Engineering student with knowledge of C++, C#, Python, and Java, primarily focused on frontend development and design using Figma. I consider myself a creative, collaborative, and team-oriented person, willing to contribute visual solutions and attractive interfaces to different projects.</p>
+            <div class="team-tags">
+                <span>C++</span><span>C#</span><span>Python</span><span>Java</span>
+            </div>
+            </div>
+        </div>
+
+        <!-- Team Video -->
+        <div class="team-video-wrap">
+            <h3 class="team-video-title">Meet Us in Person</h3>
+            <p class="team-video-sub">A quick look at who we are and what we're building.</p>
+            <div class="team-video-container">
+            <iframe
+                id="team-video"
+                src=""
+                title="SpotGo Team Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT THE PRODUCT ===== -->
+    <section class="product-section" id="product">
+        <div class="section-inner">
+            <div class="section-badge">About the Product</div>
+            <h2>See SpotGo in action</h2>
+            <p class="section-sub">
+                Watch how SpotGo makes finding and reserving parking smarter, faster, and stress-free.
+            </p>
+            <div class="product-video-container">
+                <iframe
+                id="product-video"
+                src=""
+                title="SpotGo Product Video"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+    </main>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div>
+            <a href="#hero" class="logo">
+              <img src="assets/images/spotgo-logo.png" alt="SpotGo Logo" class="logo-img" />
+              <h3 style="color: oklch(0.27 0.12 270);">SpotGo</h3>
+            </a>
+          </div>
+          <p class="footer-tagline">Smart parking for modern cities. Real-time, reliable, reserved.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="social-btn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Product -->
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#drivers">For Drivers</a></li>
+            <li><a href="#p-admins">For Parking Admins</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="https://spotgo-frontend.vercel.app">Dashboard</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#product">Product</a></li>
+          </ul>
+        </div>
+
+        <!-- Legal -->
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="https://spotgo-frontend.vercel.app/privacy-policy">Privacy</a></li>
+            <li><a href="https://spotgo-frontend.vercel.app/terms">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="footer-copy">© 2026 Yachiqo. All rights reserved.</span>
+        <span class="footer-made">Made with care for drivers everywhere.</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

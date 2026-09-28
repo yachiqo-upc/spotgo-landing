@@ -1,0 +1,304 @@
+{
+  "documentLang": "es",
+  "pageTitle": "SpotGo – Estacionamiento Inteligente",
+  "langCode": "ES",
+  "text": {
+    ".hero-sub": "Los conductores encuentran y reservan espacios abiertos en segundos con datos IoT en vivo. Los administradores de estacionamiento gestionan espacios, monitorean ocupación y aumentan ingresos desde un solo panel.",
+    ".trusted-label": "CON LA CONFIANZA DE CONDUCTORES Y ADMINISTRADORES DE ESTACIONAMIENTO EN",
+    ".drivers-section h2": "Estaciona sin estres, siempre",
+    ".drivers-section .section-sub": "Reduce el tiempo que pasas buscando estacionamiento. SpotGo ofrece disponibilidad en tiempo real y reservas en un toque para cada conductor; cada administrador de estacionamiento define los precios y planes, así que siempre ves la tarifa local por adelantado.",
+    ".p-admins-section h2": "Gestiona tu negocio de estacionamiento mejor",
+    ".p-admins-section .section-sub": "Administra cada espacio desde un solo panel. Define tus propios precios, planes de suscripcion y reglas de acceso - luego monitorea ocupacion, clasifica usuarios y aumenta ingresos por espacio.",
+    ".how-section .section-badge": "Como funciona",
+    ".how-section h2": "Estaciona en 3 pasos simples",
+    ".pricing-section .section-badge": "Precios",
+    ".pricing-section h2": "Transparente para conductores, flexible para administradores de estacionamiento",
+    ".pricing-section .section-sub": "Los conductores siempre ven las tarifas locales por adelantado, definidas por cada administrador de estacionamiento. Los administradores eligen un plan de SpotGo que se adapte a sus estacionamientos.",
+    ".driver-card-left h3": "El precio lo define cada administrador del estacionamiento",
+    ".driver-card-left > p": "SpotGo no vende suscripciones para conductores. Las tarifas por hora, pases mensuales y descuentos son definidos por cada estacionamiento, asi que siempre pagas el precio local - sin cargos sorpresa de nuestra parte. Compara opciones en el mapa en vivo y reserva en segundos.",
+    ".rates-title": "TARIFAS DE EJEMPLO",
+    ".rates-note": "Las tarifas mostradas son ejemplos. Los precios reales los define cada administrador del estacionamiento.",
+    ".plan-popular-badge": "Mas popular",
+    ".plan-custom": "Personalizado",
+    ".p-admins-plans-grid .p-admin-plan-card:nth-child(1) .btn-plan-outline": "Comenzar Inicial",
+    ".p-admins-plans-grid .p-admin-plan-card:nth-child(2) .btn-plan-primary": "Comenzar Crecimiento",
+    ".p-admins-plans-grid .p-admin-plan-card:nth-child(3) .btn-plan-outline": "Contactar ventas",
+    ".testimonials-section .section-badge": "Testimonios",
+    ".testimonials-section h2": "Amado por conductores, con la confianza de los administradores de estacionamiento",
+    ".faq-section .section-badge": "FAQ",
+    ".faq-section h2": "Preguntas frecuentes",
+    ".team-section .section-badge": "Nuestro Equipo",
+    ".cta-inner p": "Los conductores encuentran espacios más rápido. Los administradores gestionan estacionamientos mejor. Elige tu lado y empieza en minutos.",
+    ".team-section h2": "Conoce al equipo detrás de SpotGo",
+    ".team-section .section-sub": "Cinco estudiantes de Ingeniería de Software construyendo SpotGo — combinando distintas fortalezas, tecnologías y perspectivas para hacer realidad el estacionamiento inteligente.",
+    ".footer-tagline": "Estacionamiento inteligente para ciudades modernas. En tiempo real, confiable y reservado.",
+    ".footer-copy": "© 2026 Yachiqo. Todos los derechos reservados.",
+    ".footer-made": "Hecho con cuidado para conductores de todas partes."
+  },
+  "html": {
+    ".nav-actions .btn-cta": "Abrir app <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(255, 255, 255);\"></i>",
+    ".mobile-actions .btn-cta": "Abrir app <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(255, 255, 255);\"></i>",
+    ".badge": "<i class=\"fa-solid fa-bolt\" style=\"color: rgb(23, 57, 205);\"></i>Una plataforma &middot; Conductores y Administradores",
+    ".hero-content h1": "Estacionamiento inteligente,<br><em>para ambos lados del <br>bordillo.</em>",
+    ".hero-ctas .btn-primary": "Soy Conductor <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(255, 255, 255);\"></i>",
+    ".hero-ctas .btn-secondary": "Soy administrador de estacionamiento <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(38, 66, 126);\"></i>",
+    ".drivers-section .section-badge": "<i class=\"fa-solid fa-car-side\" style=\"color: #2563eb;\"></i> Para Conductores",
+    ".drivers-section .section-cta .btn-primary": "Abrir app para conductores <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(255, 255, 255);\"></i>",
+    ".p-admins-section .section-badge": "<i class=\"fa-solid fa-building\"></i> Para administradores de estacionamiento",
+    ".p-admins-section .section-cta .btn-secondary": "Explorar planes para administradores de estacionamiento <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(38, 66, 126);\"></i>",
+    ".for-drivers-label": "<i class=\"fa-solid fa-car-side\"></i> PARA CONDUCTORES",
+    ".driver-card-left .btn-primary": "Encuentra un espacio cerca de ti <i class=\"fa-solid fa-arrow-right\"></i>",
+    ".for-p-admins-label": "<i class=\"fa-solid fa-building\"></i> PARA ADMINISTRADORES DE ESTACIONAMIENTO",
+    ".cta-inner h2": "Estacionamiento inteligente,<br>en ambos lados del bordillo",
+    ".cta-buttons .btn-cta-white": "Soy Conductor <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(37, 65, 125);\"></i>",
+    ".cta-buttons .btn-cta-outline": "Soy administrador de estacionamiento <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(255, 255, 255);\"></i>"
+  },
+  "listText": [
+    {
+      "selector": ".nav-links a",
+      "values": [
+        "Para Conductores",
+        "Para administradores",
+        "Como funciona",
+        "Precios",
+        "FAQ"
+      ]
+    },
+    {
+      "selector": ".mobile-menu > a",
+      "values": [
+        "Para Conductores",
+        "Para administradores",
+        "Como funciona",
+        "Precios",
+        "FAQ"
+      ]
+    },
+    {
+      "selector": ".drivers-grid .d-card h3",
+      "values": [
+        "Disponibilidad en tiempo real",
+        "Menos tiempo buscando",
+        "Llegadas sin estres",
+        "Ubicaciones favoritas",
+        "Acceso facil",
+        "Pagos seguros"
+      ]
+    },
+    {
+      "selector": ".drivers-grid .d-card p",
+      "values": [
+        "Los sensores IoT en vivo muestran espacios libres en cada estacionamiento conectado - no mas suposiciones.",
+        "Reserva antes de salir de casa y conduce directo a tu espacio.",
+        "Alertas inteligentes antes de que se acabe tu tiempo - extiende con un toque.",
+        "Guarda los estacionamientos que mas usas y vuelve a reservar al instante.",
+        "Entrada y salida sin friccion - tu reserva es tu pase, sin tickets.",
+        "Pago cifrado en un toque con tarjetas y billeteras principales - al precio definido por cada playa."
+      ]
+    },
+    {
+      "selector": ".p-admins-grid .p-admin-card h3",
+      "values": [
+        "Gestion de espacios",
+        "Monitoreo en tiempo real",
+        "Precios y planes personalizados",
+        "Clasificacion de usuarios y accesos",
+        "Analitica y reportes",
+        "Optimizacion de ingresos"
+      ]
+    },
+    {
+      "selector": ".p-admins-grid .p-admin-card p",
+      "values": [
+        "Configura estacionamientos, zonas y espacios individuales con capacidad, servicios y horarios.",
+        "Sigue el estado de cada espacio en vivo - ocupado, reservado o disponible - en todos tus sitios.",
+        "Define tus tarifas por hora, precios dinamicos, pases mensuales y reglas de descuento por estacionamiento.",
+        "Segmenta conductores (visitante, residente, empleado, VIP) y define reglas de acceso por grupo.",
+        "Tendencias de ocupacion, horas pico y desglose de ingresos para mejores decisiones.",
+        "Sugerencias de precios dinamicos y flujos de reserva que maximizan la rotacion por espacio."
+      ]
+    },
+    {
+      "selector": ".steps-grid .step-card h3",
+      "values": [
+        "Encuentra un espacio",
+        "Reserva y paga",
+        "Conduce y estaciona"
+      ]
+    },
+    {
+      "selector": ".steps-grid .step-card p",
+      "values": [
+        "Explora el mapa en vivo y filtra por precio, servicios o distancia.",
+        "Elige tu horario y confirma con pago seguro en un toque.",
+        "Navega a tu espacio. Extiende o califica tu estadia desde la app."
+      ]
+    },
+    {
+      "selector": ".stats-bar .stat-item .stat-label",
+      "values": [
+        "Reservas realizadas",
+        "Estacionamientos conectados",
+        "Llegadas a tiempo",
+        "Calificacion promedio"
+      ]
+    },
+    {
+      "selector": ".p-admins-plans-grid .p-admin-plan-card .plan-name",
+      "values": [
+        "INICIAL",
+        "CRECIMIENTO",
+        "EMPRESARIAL"
+      ]
+    },
+    {
+      "selector": ".p-admins-plans-grid .p-admin-plan-card .plan-tagline",
+      "values": [
+        "Un estacionamiento, hasta 50 espacios.",
+        "Multiples estacionamientos, hasta 500 espacios.",
+        "Cobertura de ciudad y franquicias."
+      ]
+    },
+    {
+      "selector": ".testimonials-grid .t-card .t-quote",
+      "values": [
+        "\"No doy vueltas a la manzana hace meses. SpotGo me encuentra lugar antes de salir de casa.\"",
+        "\"La ocupacion en nuestras 4 playas por fin se ve en un solo lugar. El ingreso por espacio subio 22%.\"",
+        "\"La configuracion tomo una tarde. Ahora el equipo pasa menos tiempo en piso y mas con clientes.\""
+      ]
+    },
+    {
+      "selector": ".testimonials-grid .t-card .t-role",
+      "values": [
+        "Conductora diaria - Conductora",
+        "Lider de operaciones - CityPark",
+        "Gerente - Aero Mall Parking"
+      ]
+    },
+    {
+      "selector": ".faq-list .faq-item .faq-question span",
+      "values": [
+        "Como funciona la disponibilidad en tiempo real?",
+        "Como conductor, puedo cancelar una reserva?",
+        "¿Cómo registran sus estacionamientos los administradores?",
+        "¿Qué análisis reciben los administradores de estacionamiento?",
+        "Soportan espacios de carga para EV?"
+      ]
+    },
+    {
+      "selector": ".faq-list .faq-item .faq-answer p",
+      "values": [
+        "Cada estacionamiento conectado usa sensores IoT en el suelo que reportan el estado de cada espacio cada pocos segundos a la nube, y eso se refleja en los paneles de conductores y administradores.",
+        "Si. Las cancelaciones realizadas con mas de 15 minutos de anticipacion se reembolsan por completo.",
+        "Ofrecemos kits de sensores IoT y una implementación guiada. La mayoría de los administradores que gestionan un solo estacionamiento pueden empezar en un día; las carteras grandes reciben un gerente dedicado.",
+        "Ocupacion en vivo, mapas de calor por hora pico, ingresos por espacio, conversion de reservas y comparaciones entre sedes - todo exportable.",
+        "Claro. Los conductores pueden filtrar por vehículos eléctricos y los administradores pueden señalizar y tarifar esos espacios por separado."
+      ]
+    },
+    {
+      "selector": ".footer-col h4",
+      "values": [
+        "Producto",
+        "Empresa",
+        "Legal"
+      ]
+    },
+    {
+      "selector": ".footer-col:nth-child(2) ul li a",
+      "values": [
+        "Para Conductores",
+        "Para administradores",
+        "Precios",
+        "Panel"
+      ]
+    },
+    {
+      "selector": ".footer-col:nth-child(3) ul li a",
+      "values": [
+        "Equipo",
+        "Producto"
+      ]
+    },
+    {
+      "selector": ".footer-col:nth-child(4) ul li a",
+      "values": [
+        "Privacidad",
+        "Terminos"
+      ]
+    },
+    {
+      "selector": ".footer-bottom-links a",
+      "values": [
+        "Privacidad",
+        "Terminos",
+        "Cookies"
+      ]
+    },
+    {
+      "selector": ".team-grid .team-card .team-name",
+      "values": [
+        "Adrian Ruiz Mideyros",
+        "Nestor Alonso Rojas Tello",
+        "Cesar Jair Contreras Rojas",
+        "Briguite Eryka Carhuaz Centeno",
+        "Sofia Alessandra Cotrina Siclla"
+      ]
+    },
+    {
+      "selector": ".team-grid .team-card .team-role",
+      "values": [
+        "Desarrollador de Apps y Videojuegos",
+        "Desarrollador Web y de Software",
+        "Desarrollador de Software",
+        "Desarrollador de Diseño Frontend",
+        "Desarrollador Frontend y Web"
+      ]
+    },
+    {
+      "selector": ".team-grid .team-card .team-bio",
+      "values": [
+        "Estudiante de Ingeniería de Software con experiencia en desarrollo web y videojuegos con dominio de Java, C#, Python, JS, C++ y SQL. Perfil proactivo enfocado en resolver problemas, capaz de adaptarse a proyectos en constante cambio, con un alto aprendizaje continuo y una actitud colaborativa ante cualquier situación.",
+        "Estudiante de Ingeniería de Software. Tengo conocimientos en C++, Python, JavaScript y CSS. Me considero una persona colaborativa, responsable y con disposición para resolver dudas y proponer soluciones ante cualquier desafío.",
+        "Estudiante de Ingeniería de Software. He practicado con Python, C++, Java entre otros. Me considero alguien responsable, colaborativo, amable y dispuesto a ayudar a mis compañeros; soy alguien que se esfuerza por encontrar soluciones a problemas.",
+        "Estudiante de Ingeniería de Software con conocimientos en Java, HTML, CSS y JavaScript. Me considero una persona responsable, colaborativa y con facilidad para aprender nuevas tecnologías. Me gusta trabajar en equipo, resolver problemas y buscar soluciones que permitan mejorar continuamente.",
+        "Estudiante de Ingeniería de Software con conocimientos en C++, C#, Python y Java, con un enfoque principal orientado al desarrollo frontend y diseño en Figma. Me considero una persona creativa, colaborativa y comprometida con el trabajo en equipo, dispuesta a aportar soluciones visuales e interfaces atractivas para los proyectos."
+      ]
+    }
+  ],
+  "listHtml": [
+    {
+      "selector": ".hero .trust-bar span",
+      "values": [
+        "<i class=\"fa-regular fa-circle-check\" style=\"color: rgb(99, 230, 148);\"></i> Sin costos de configuracion",
+        "<i class=\"fa-regular fa-circle-check\" style=\"color: rgb(99, 230, 148);\"></i> Cancela cuando quieras",
+        "<i class=\"fa-regular fa-circle-check\" style=\"color: rgb(99, 230, 148);\"></i> Soporte 24/7"
+      ]
+    },
+    {
+      "selector": ".driver-features span",
+      "values": [
+        "<i class=\"fa-regular fa-circle-check\"></i> Ver tarifas en vivo por estacionamiento",
+        "<i class=\"fa-regular fa-circle-check\"></i> Paga solo lo que cobra el administrador del estacionamiento",
+        "<i class=\"fa-regular fa-circle-check\"></i> Suscribete al plan de una playa si esta disponible",
+        "<i class=\"fa-regular fa-circle-check\"></i> No requiere suscripcion de SpotGo"
+      ]
+    },
+    {
+      "selector": ".p-admins-plans-grid .p-admin-plan-card .plan-features span",
+      "values": [
+        "<i class=\"fa-regular fa-circle-check\"></i> Monitoreo en tiempo real",
+        "<i class=\"fa-regular fa-circle-check\"></i> Analitica basica",
+        "<i class=\"fa-regular fa-circle-check\"></i> Gestion de reservas",
+        "<i class=\"fa-regular fa-circle-check\"></i> Soporte por correo",
+        "<i class=\"fa-regular fa-circle-check\"></i> Analitica y reportes avanzados",
+        "<i class=\"fa-regular fa-circle-check\"></i> Herramientas de precios dinamicos",
+        "<i class=\"fa-regular fa-circle-check\"></i> Roles de equipo y zonas",
+        "<i class=\"fa-regular fa-circle-check\"></i> Soporte prioritario",
+        "<i class=\"fa-regular fa-circle-check\"></i> Estacionamientos y espacios ilimitados",
+        "<i class=\"fa-regular fa-circle-check\"></i> Integraciones personalizadas y API",
+        "<i class=\"fa-regular fa-circle-check\"></i> Gerente de exito dedicado",
+        "<i class=\"fa-regular fa-circle-check\"></i> SLA y onboarding"
+      ]
+    }
+  ]
+}

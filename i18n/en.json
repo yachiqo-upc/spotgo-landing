@@ -1,0 +1,304 @@
+{
+  "documentLang": "en",
+  "pageTitle": "SpotGo – Smart Parking",
+  "langCode": "EN",
+  "text": {
+    ".hero-sub": "Drivers find and reserve open spots in seconds with live IoT data. Parking Admins manage spaces, monitor occupancy and grow revenue from a single dashboard.",
+    ".trusted-label": "TRUSTED BY DRIVERS & PARKING ADMINS AT",
+    ".drivers-section h2": "Park stress-free, every time",
+    ".drivers-section .section-sub": "Cut the time you spend hunting for a spot. SpotGo brings real-time availability and one-tap reservations to every driver - pricing and plans are defined by each parking admin, so you always see local rates upfront.",
+    ".p-admins-section h2": "Run your parking business smarter",
+    ".p-admins-section .section-sub": "Manage every space from one dashboard. Define your own pricing, subscription plans and access rules - then monitor occupancy, classify users and grow revenue per spot.",
+    ".how-section .section-badge": "How it works",
+    ".how-section h2": "Park in 3 simple steps",
+    ".pricing-section .section-badge": "Pricing",
+    ".pricing-section h2": "Transparent for drivers, flexible for Parking Admins",
+    ".pricing-section .section-sub": "Drivers always see local rates upfront - set by each parking admin. Parking Admins choose a SpotGo platform plan that fits their portfolio.",
+    ".driver-card-left h3": "Pricing is set by each parking admin",
+    ".driver-card-left > p": "SpotGo does not sell driver subscriptions. Hourly rates, monthly passes and discounts are defined by each parking lot, so you always pay the local price - no surprise fees from us. Compare options on the live map and reserve in seconds.",
+    ".rates-title": "SAMPLE LOT RATES",
+    ".rates-note": "Rates shown are examples. Actual prices are set by each parking admin.",
+    ".plan-popular-badge": "Most popular",
+    ".plan-custom": "Custom",
+    ".p-admins-plans-grid .p-admin-plan-card:nth-child(1) .btn-plan-outline": "Start Starter",
+    ".p-admins-plans-grid .p-admin-plan-card:nth-child(2) .btn-plan-primary": "Start Growth",
+    ".p-admins-plans-grid .p-admin-plan-card:nth-child(3) .btn-plan-outline": "Contact sales",
+    ".testimonials-section .section-badge": "Testimonials",
+    ".testimonials-section h2": "Loved by drivers, trusted by Parking Admins",
+    ".faq-section .section-badge": "FAQ",
+    ".faq-section h2": "Frequently asked questions",
+    ".cta-inner p": "Drivers find spots faster. Parking Admins run lots smarter. Pick your side and get started in minutes.",
+    ".team-section .section-badge": "Our Team",
+    ".team-section h2": "Meet the team behind SpotGo",
+    ".team-section .section-sub": "Five Software Engineering students building SpotGo — combining different strengths, stacks and perspectives to make smart parking happen.",
+    ".footer-tagline": "Smart parking for modern cities. Real-time, reliable, reserved.",
+    ".footer-copy": "© 2026 Yachiqo. All rights reserved.",
+    ".footer-made": "Made with care for drivers everywhere."
+  },
+  "html": {
+    ".nav-actions .btn-cta": "Open app <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(255, 255, 255);\"></i>",
+    ".mobile-actions .btn-cta": "Open app <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(255, 255, 255);\"></i>",
+    ".badge": "<i class=\"fa-solid fa-bolt\" style=\"color: rgb(23, 57, 205);\"></i>One platform &middot; Drivers & Parking Admins",
+    ".hero-content h1": "Smart parking,<br><em>for both sides of the <br>curb.</em>",
+    ".hero-ctas .btn-primary": "I'm a Driver <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(255, 255, 255);\"></i>",
+    ".hero-ctas .btn-secondary": "I'm a Parking Admin <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(38, 66, 126);\"></i>",
+    ".drivers-section .section-badge": "<i class=\"fa-solid fa-car-side\" style=\"color: #2563eb;\"></i> For Drivers",
+    ".drivers-section .section-cta .btn-primary": "Open the driver app <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(255, 255, 255);\"></i>",
+    ".p-admins-section .section-badge": "<i class=\"fa-solid fa-building\"></i> For Parking Admins",
+    ".p-admins-section .section-cta .btn-secondary": "Explore plans for Parking Admins <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(38, 66, 126);\"></i>",
+    ".for-drivers-label": "<i class=\"fa-solid fa-car-side\"></i> FOR DRIVERS",
+    ".driver-card-left .btn-primary": "Find a spot near you <i class=\"fa-solid fa-arrow-right\"></i>",
+    ".for-p-admins-label": "<i class=\"fa-solid fa-building\"></i> FOR PARKING ADMINS",
+    ".cta-inner h2": "Smarter parking,<br>on both sides of the curb",
+    ".cta-buttons .btn-cta-white": "I'm a Driver <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(37, 65, 125);\"></i>",
+    ".cta-buttons .btn-cta-outline": "I'm a Parking Admin <i class=\"fa-solid fa-arrow-right-to-bracket\" style=\"color: rgb(255, 255, 255);\"></i>"
+  },
+  "listText": [
+    {
+      "selector": ".nav-links a",
+      "values": [
+        "For Drivers",
+        "For Parking Admins",
+        "How it works",
+        "Pricing",
+        "FAQ"
+      ]
+    },
+    {
+      "selector": ".mobile-menu > a",
+      "values": [
+        "For Drivers",
+        "For Parking Admins",
+        "How it works",
+        "Pricing",
+        "FAQ"
+      ]
+    },
+    {
+      "selector": ".drivers-grid .d-card h3",
+      "values": [
+        "Real-time availability",
+        "Less time searching",
+        "Stress-free arrivals",
+        "Favorite locations",
+        "Ease of access",
+        "Secure payments"
+      ]
+    },
+    {
+      "selector": ".drivers-grid .d-card p",
+      "values": [
+        "Live IoT sensors show open spots across every connected lot - no more guessing.",
+        "Reserve before you leave home and drive straight to your spot.",
+        "Smart alerts before your time runs out - extend with a single tap.",
+        "Save the lots you use most and rebook your usual spot instantly.",
+        "Frictionless entry and exit - your reservation is your pass, no tickets to handle.",
+        "Encrypted, one-tap checkout with all major cards and wallets - at the price set by each lot."
+      ]
+    },
+    {
+      "selector": ".p-admins-grid .p-admin-card h3",
+      "values": [
+        "Space management",
+        "Real-time monitoring",
+        "Custom pricing & plans",
+        "User classification & access",
+        "Analytics & reports",
+        "Revenue optimization"
+      ]
+    },
+    {
+      "selector": ".p-admins-grid .p-admin-card p",
+      "values": [
+        "Configure lots, zones and individual bays with capacity, services and operating hours.",
+        "Track every spot's status live - occupied, reserved or available - across all your sites.",
+        "Set your own hourly rates, dynamic pricing, monthly passes and discount rules per lot.",
+        "Segment drivers (visitor, resident, employee, VIP) and define access rules for each group.",
+        "Occupancy trends, peak hours and revenue breakdowns to drive better decisions.",
+        "Dynamic pricing suggestions and reservation flows that maximize spot turnover."
+      ]
+    },
+    {
+      "selector": ".steps-grid .step-card h3",
+      "values": [
+        "Find a spot",
+        "Reserve & pay",
+        "Drive & park"
+      ]
+    },
+    {
+      "selector": ".steps-grid .step-card p",
+      "values": [
+        "Browse the live map and filter by price, services, or distance.",
+        "Choose your time slot and confirm with secure one-tap payment.",
+        "Navigate to your spot. Extend or rate your stay from the app."
+      ]
+    },
+    {
+      "selector": ".stats-bar .stat-item .stat-label",
+      "values": [
+        "Reservations made",
+        "Connected lots",
+        "On-time arrivals",
+        "Average rating"
+      ]
+    },
+    {
+      "selector": ".p-admins-plans-grid .p-admin-plan-card .plan-name",
+      "values": [
+        "STARTER",
+        "GROWTH",
+        "ENTERPRISE"
+      ]
+    },
+    {
+      "selector": ".p-admins-plans-grid .p-admin-plan-card .plan-tagline",
+      "values": [
+        "Single lot, up to 50 spaces.",
+        "Multi-lot, up to 500 spaces.",
+        "Citywide & franchises."
+      ]
+    },
+    {
+      "selector": ".testimonials-grid .t-card .t-quote",
+      "values": [
+        "\"I have not circled a block in months. SpotGo finds me a spot before I even leave home.\"",
+        "\"Occupancy across our 4 lots is finally visible in one place. Revenue per spot is up 22%.\"",
+        "\"Setup took an afternoon. Our staff now spend less time on the floor and more on customers.\""
+      ]
+    },
+    {
+      "selector": ".testimonials-grid .t-card .t-role",
+      "values": [
+        "Daily commuter - Driver",
+        "Operations lead - CityPark",
+        "Manager - Aero Mall Parking"
+      ]
+    },
+    {
+      "selector": ".faq-list .faq-item .faq-question span",
+      "values": [
+        "How does real-time availability work?",
+        "As a driver, can I cancel a reservation?",
+        "How do Parking Admins onboard their parking lots?",
+        "What analytics do Parking Admins get?",
+        "Do you support EV charging spots?"
+      ]
+    },
+    {
+      "selector": ".faq-list .faq-item .faq-answer p",
+      "values": [
+        "Each connected lot uses IoT ground sensors that report spot status every few seconds to our cloud, which streams updates straight to driver and Parking Admin dashboards.",
+        "Yes. Cancellations made more than 15 minutes before your start time are fully refunded.",
+        "We provide IoT sensor kits and a guided setup. Most Parking Admins managing a single lot can go live within a day; larger portfolios get a dedicated success manager.",
+        "Live occupancy, peak-hour heatmaps, revenue per spot, reservation conversion and side-by-side site comparisons - all exportable.",
+        "Absolutely. Drivers can filter by EV, and Parking Admins can flag and price EV-enabled bays separately."
+      ]
+    },
+    {
+      "selector": ".footer-col h4",
+      "values": [
+        "Product",
+        "Company",
+        "Legal"
+      ]
+    },
+    {
+      "selector": ".footer-col:nth-child(2) ul li a",
+      "values": [
+        "For Drivers",
+        "For Parking Admins",
+        "Pricing",
+        "Dashboard"
+      ]
+    },
+    {
+      "selector": ".footer-col:nth-child(3) ul li a",
+      "values": [
+        "Team",
+        "Product"
+      ]
+    },
+    {
+      "selector": ".footer-col:nth-child(4) ul li a",
+      "values": [
+        "Privacy",
+        "Terms"
+      ]
+    },
+    {
+      "selector": ".footer-bottom-links a",
+      "values": [
+        "Privacy",
+        "Terms",
+        "Cookies"
+      ]
+    },
+    {
+      "selector": ".team-grid .team-card .team-name",
+      "values": [
+        "Adrian Ruiz Mideyros",
+        "Nestor Alonso Rojas Tello",
+        "Cesar Jair Contreras Rojas",
+        "Briguite Eryka Carhuaz Centeno",
+        "Sofia Alessandra Cotrina Siclla"
+      ]
+    },
+    {
+      "selector": ".team-grid .team-card .team-role",
+      "values": [
+        "App & Game Developer",
+        "Web & Software Developer",
+        "Software Developer",
+        "Frontend Design Developer",
+        "Frontend & Web Developer"
+      ]
+    },
+    {
+      "selector": ".team-grid .team-card .team-bio",
+      "values": [
+        "Software Engineering student with experience in web and video game development, proficient in Java, C#, Python, JavaScript, C++, and SQL. Proactive and problem-solving oriented, with the ability to adapt to constantly evolving projects. Committed to continuous learning and effective collaboration in diverse team environments.",
+        "Software Engineering student with knowledge of C++, Python, JavaScript and CSS. I consider myself collaborative and responsible, always ready to answer questions and propose solutions to any challenge.",
+        "Software Engineering student. I have practiced with Python, C++, Java and others. I consider myself responsible, collaborative, kind and willing to help my teammates — someone who strives to find solutions to problems.",
+        "Software Engineering student with knowledge of Java, HTML, CSS, and JavaScript. I consider myself a responsible and collaborative person with a strong ability to learn new technologies. I enjoy working in teams, solving problems, and finding solutions that contribute to continuous improvement.",
+        "Organized and responsible Software Engineering student, focused on efficiency and quality in both individual and group projects. My commitment to continuous learning lets me adapt to new challenges and contribute innovative ideas. I have technical foundations in Python, C++, JavaScript, web development (Vue.js, Tailwind) and SQL/NoSQL databases."
+      ]
+    }
+  ],
+  "listHtml": [
+    {
+      "selector": ".hero .trust-bar span",
+      "values": [
+        "<i class=\"fa-regular fa-circle-check\" style=\"color: rgb(99, 230, 148);\"></i> No setup fees",
+        "<i class=\"fa-regular fa-circle-check\" style=\"color: rgb(99, 230, 148);\"></i> Cancel anytime",
+        "<i class=\"fa-regular fa-circle-check\" style=\"color: rgb(99, 230, 148);\"></i> 24/7 support"
+      ]
+    },
+    {
+      "selector": ".driver-features span",
+      "values": [
+        "<i class=\"fa-regular fa-circle-check\"></i> See live rates per lot",
+        "<i class=\"fa-regular fa-circle-check\"></i> Pay only what the parking admin charges",
+        "<i class=\"fa-regular fa-circle-check\"></i> Subscribe to a lot's plan if offered",
+        "<i class=\"fa-regular fa-circle-check\"></i> No SpotGo subscription required"
+      ]
+    },
+    {
+      "selector": ".p-admins-plans-grid .p-admin-plan-card .plan-features span",
+      "values": [
+        "<i class=\"fa-regular fa-circle-check\"></i> Real-time monitoring",
+        "<i class=\"fa-regular fa-circle-check\"></i> Basic analytics",
+        "<i class=\"fa-regular fa-circle-check\"></i> Reservation management",
+        "<i class=\"fa-regular fa-circle-check\"></i> Email support",
+        "<i class=\"fa-regular fa-circle-check\"></i> Advanced analytics & reports",
+        "<i class=\"fa-regular fa-circle-check\"></i> Dynamic pricing tools",
+        "<i class=\"fa-regular fa-circle-check\"></i> Staff roles & zones",
+        "<i class=\"fa-regular fa-circle-check\"></i> Priority support",
+        "<i class=\"fa-regular fa-circle-check\"></i> Unlimited lots & spaces",
+        "<i class=\"fa-regular fa-circle-check\"></i> Custom integrations & API",
+        "<i class=\"fa-regular fa-circle-check\"></i> Dedicated success manager",
+        "<i class=\"fa-regular fa-circle-check\"></i> SLA & onboarding"
+      ]
+    }
+  ]
+}
