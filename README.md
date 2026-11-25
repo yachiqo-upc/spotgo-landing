@@ -1,20 +1,53 @@
 # SpotGo Landing Page
 
-Responsive static landing page for the SpotGo Driver and SpotGo Parking Admin mobile apps.
+Static landing page for SpotGo, a parking solution with two mobile apps:
 
-## Stack
+- **SpotGo Driver** — find permitted parking zones, check availability, manage vehicles and reservations, and pay from the app.
+- **SpotGo Parking Admin** — configure zones and spaces, monitor occupancy and alerts, and register guest parking sessions.
 
-- HTML, CSS and Vanilla JavaScript
-- English (`en_US`) by default and Latin American Spanish (`es_419`)
-- Language preference saved in the browser's local storage
-- Hosted on GitHub Pages; no build step or package manager required
+Live site: [yachiqo-upc.github.io/spotgo-landing](https://yachiqo-upc.github.io/spotgo-landing/)
+
+## Features
+
+- English (`en_US`, default) and Latin American Spanish (`es_419`); the selected language is saved in the browser's local storage.
+- Product and team videos played in the page.
+- Terms and Conditions (English and Spanish) and Privacy Policy pages.
+- Responsive layout, keyboard navigation and reduced-motion support.
 
 ## Run locally
 
-Start an HTTP server in the project root so the page can load its translation files:
+Serve the project root over HTTP so the page can load its translation files:
 
 ```bash
 python -m http.server 5500
 ```
 
 Open [http://localhost:5500](http://localhost:5500).
+
+## Project structure
+
+```
+index.html          Landing page
+styles.css          Shared styles (landing and legal pages)
+main.js             Language switching, navigation, dialog and video playback
+i18n/               en_US.json and es_419.json translations
+assets/             Images, font and videos
+terms/              Terms and Conditions
+privacy-policy/     Privacy Policy
+```
+
+HTML, CSS and vanilla JavaScript; no build step or package manager. Deployed with GitHub Pages; all paths are relative, so the site also works under the `/spotgo-landing/` project path.
+
+## Team
+
+Yachiqo — Adrian Ruiz Mideyros, Nestor Alonso Rojas Tello, Cesar Jair Contreras Rojas, Briguite Eryka Carhuaz Centeno and Sofia Alessandra Cotrina Siclla.
+
+## Credits
+
+- Terms and Conditions generated with the [TermsFeed Terms and Conditions Generator](https://www.termsfeed.com/terms-conditions-generator/).
+- [Plus Jakarta Sans](https://fonts.google.com/specimen/Plus+Jakarta+Sans) typeface (SIL Open Font License 1.1).
+- Google Play icon from [SVG Repo](https://www.svgrepo.com/).
+
+## License
+
+[MIT](LICENSE) © 2026 Yachiqo

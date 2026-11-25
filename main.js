@@ -161,13 +161,26 @@ window.addEventListener('resize', () => {
 });
 
 document.querySelectorAll('[data-video-embed]').forEach((embed) => {
-  const videoUrl = embed.dataset.videoUrl?.trim();
-  const iframe = embed.querySelector('iframe');
-  if (!videoUrl || !iframe) return;
+  const video = embed.querySelector('video');
+  const playButton = embed.querySelector('[data-video-play]');
+  if (!video || !playButton) return;
 
-  iframe.src = videoUrl;
-  iframe.hidden = false;
-  embed.classList.add('has-video');
+  const showCover = () => {
+    video.hidden = true;
+    embed.classList.remove('has-video');
+  };
+
+  playButton.addEventListener('click', () => {
+    video.hidden = false;
+    embed.classList.add('has-video');
+    video.focus({ preventScroll: true });
+    video.play().catch(() => {
+      // Autoplay can be refused; the native controls stay available to start playback.
+    });
+  });
+
+  // Keep the static cover when the file cannot be loaded.
+  video.querySelector('source')?.addEventListener('error', showCover);
 });
 
 languageSelect?.addEventListener('pointerdown', () => {

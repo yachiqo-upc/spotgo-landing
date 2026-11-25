@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#0f0d17" />
+    <meta name="theme-color" content="#f3f4f7" />
     <meta
       name="description"
       content="Meet SpotGo: mobile parking apps for drivers and parking teams. Find a space, manage reservations and follow parking operations."
@@ -20,7 +20,7 @@
     <header class="site-header">
       <nav class="nav-shell page-width" aria-label="Main navigation" data-i18n-aria-label="accessibility.navigation">
         <a class="brand" href="./" data-scroll-to-top aria-label="SpotGo home">
-          <img src="assets/spotgo-logo.png" alt="" width="42" height="42" />
+          <img src="assets/spotgo-logo-w-bg.png" alt="" width="38" height="38" />
           <span>Spot<span class="brand-accent">Go</span></span>
         </a>
 
@@ -203,23 +203,24 @@
             <p data-i18n="product.description">Discover how SpotGo helps Drivers find parking and gives Parking Admins mobile tools to review occupancy and daily operations.</p>
           </div>
 
-          <!-- Set data-video-url to the provider's embed URL when the product video is ready. -->
-          <div class="video-embed" data-video-embed data-video-url="">
-            <iframe
-              src="about:blank"
-              title="SpotGo product overview video"
-              data-i18n-title="video.productTitle"
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+          <!-- Product overview video, played in the page with native controls. -->
+          <div class="video-embed" data-video-embed>
+            <video
+              controls
+              playsinline
+              preload="none"
+              aria-label="SpotGo product overview video"
+              data-i18n-aria-label="video.productTitle"
               hidden
-            ></iframe>
-            <div class="video-placeholder" role="img" data-i18n-aria-label="video.productPlaceholder">
+            >
+              <source src="assets/videos/spotgo-product-video.mp4" type="video/mp4" />
+            </video>
+            <button class="video-placeholder" type="button" data-video-play>
               <span class="video-placeholder-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z" /></svg>
               </span>
               <span class="video-placeholder-label" data-i18n="video.productLabel">Product overview video</span>
-            </div>
+            </button>
           </div>
         </div>
       </section>
@@ -309,23 +310,24 @@
               <h3 data-i18n="team.video.title">Meet us in person</h3>
               <p data-i18n="team.video.description">A quick look at who we are and what we are building.</p>
             </div>
-            <!-- Set data-video-url to the provider's embed URL when the team video is ready. -->
-            <div class="video-embed" data-video-embed data-video-url="">
-              <iframe
-                src="about:blank"
-                title="SpotGo team video"
-                data-i18n-title="video.teamTitle"
-                loading="lazy"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+            <!-- Team video, played in the page with native controls. -->
+            <div class="video-embed" data-video-embed>
+              <video
+                controls
+                playsinline
+                preload="none"
+                aria-label="SpotGo team video"
+                data-i18n-aria-label="video.teamTitle"
                 hidden
-              ></iframe>
-              <div class="video-placeholder" role="img" data-i18n-aria-label="video.teamPlaceholder">
+              >
+                <source src="assets/videos/spotgo-team-video.mp4" type="video/mp4" />
+              </video>
+              <button class="video-placeholder" type="button" data-video-play>
                 <span class="video-placeholder-icon" aria-hidden="true">
                   <svg viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z" /></svg>
                 </span>
                 <span class="video-placeholder-label" data-i18n="video.teamLabel">Meet the team video</span>
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -376,8 +378,8 @@
           <a href="#apps" data-i18n="nav.apps">The apps</a>
           <a href="#how-it-works" data-i18n="nav.how">How it works</a>
           <a href="#faq" data-i18n="nav.faq">FAQ</a>
-          <a href="./privacy-policy" data-i18n="footer.privacy">Privacy Policy</a>
-          <a href="./terms" data-i18n="footer.terms">Terms</a>
+          <a href="./privacy-policy/" data-i18n="footer.privacy">Privacy Policy</a>
+          <a href="./terms/" data-i18n="footer.terms">Terms</a>
         </div>
         <small data-i18n="footer.copyright">© 2026 Yachiqo</small>
       </div>
