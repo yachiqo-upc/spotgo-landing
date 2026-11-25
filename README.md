@@ -10,6 +10,7 @@ Live site: [yachiqo-upc.github.io/spotgo-landing](https://yachiqo-upc.github.io/
 ## Features
 
 - English (`en_US`, default) and Latin American Spanish (`es_419`); the selected language is saved in the browser's local storage.
+- Screen viewer to enlarge and browse the SpotGo Driver and Parking Admin screenshots.
 - Product and team videos played in the page.
 - Terms and Conditions (English and Spanish) and Privacy Policy pages.
 - Responsive layout, keyboard navigation and reduced-motion support.
@@ -29,7 +30,7 @@ Open [http://localhost:5500](http://localhost:5500).
 ```
 index.html          Landing page
 styles.css          Shared styles (landing and legal pages)
-main.js             Language switching, navigation, dialog and video playback
+main.js             Language switching, navigation, dialogs, screen viewer and video playback
 i18n/               en_US.json and es_419.json translations
 assets/             Images, font and videos
 terms/              Terms and Conditions

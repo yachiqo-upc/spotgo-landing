@@ -181,7 +181,123 @@ document.querySelectorAll('[data-video-embed]').forEach((embed) => {
 
   // Keep the static cover when the file cannot be loaded.
   video.querySelector('source')?.addEventListener('error', showCover);
+
+  // Visual playing state for the frame around the player.
+  video.addEventListener('play', () => embed.classList.add('is-playing'));
+  video.addEventListener('pause', () => embed.classList.remove('is-playing'));
+  video.addEventListener('ended', () => embed.classList.remove('is-playing'));
 });
+
+const screenViewer = document.getElementById('screenViewer');
+const screenTriggers = [...document.querySelectorAll('[data-screen]')];
+
+if (screenViewer && screenTriggers.length) {
+  const screens = [];
+  screenTriggers.forEach((trigger) => {
+    if (screens.some((screen) => screen.id === trigger.dataset.screen)) return;
+    screens.push({ id: trigger.dataset.screen, image: trigger.querySelector('img'), nameKey: trigger.dataset.screenNameKey });
+  });
+
+  const viewerImage = screenViewer.querySelector('.viewer-image');
+  const viewerTitle = screenViewer.querySelector('.viewer-title');
+  const viewerCount = screenViewer.querySelector('.viewer-count');
+  const viewerScroll = screenViewer.querySelector('.viewer-scroll');
+  let currentScreen = 0;
+  let lastTrigger = null;
+  let swipeStart = null;
+
+  const showScreen = (index) => {
+    currentScreen = (index + screens.length) % screens.length;
+    const screen = screens[currentScreen];
+    viewerImage.src = screen.image.currentSrc || screen.image.src;
+    viewerImage.alt = screen.image.alt;
+    // App names come from the already translated page text.
+    viewerTitle.textContent = document.querySelector(`[data-i18n="${screen.nameKey}"]`)?.textContent || '';
+    viewerCount.textContent = `${currentScreen + 1} / ${screens.length}`;
+    viewerScroll.scrollTop = 0;
+  };
+
+  screenTriggers.forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      lastTrigger = trigger;
+      showScreen(screens.findIndex((screen) => screen.id === trigger.dataset.screen));
+      screenViewer.showModal();
+      viewerScroll.focus({ preventScroll: true });
+    });
+  });
+
+  screenViewer.querySelector('.viewer-prev')?.addEventListener('click', () => showScreen(currentScreen - 1));
+  screenViewer.querySelector('.viewer-next')?.addEventListener('click', () => showScreen(currentScreen + 1));
+  screenViewer.querySelector('.viewer-close')?.addEventListener('click', () => screenViewer.close());
+
+  screenViewer.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowLeft') {
+      event.preventDefault();
+      showScreen(currentScreen - 1);
+    } else if (event.key === 'ArrowRight') {
+      event.preventDefault();
+      showScreen(currentScreen + 1);
+    }
+  });
+
+  screenViewer.addEventListener('click', (event) => {
+    if (event.target === screenViewer) screenViewer.close();
+  });
+
+  screenViewer.addEventListener('close', () => {
+    lastTrigger?.focus({ preventScroll: true });
+  });
+
+  // Horizontal swipe switches screens; vertical movement keeps scrolling the screenshot.
+  viewerScroll.addEventListener('pointerdown', (event) => {
+    swipeStart = { x: event.clientX, y: event.clientY };
+  });
+
+  viewerScroll.addEventListener('pointercancel', () => {
+    swipeStart = null;
+  });
+
+  viewerScroll.addEventListener('pointerup', (event) => {
+    if (!swipeStart) return;
+    const deltaX = event.clientX - swipeStart.x;
+    const deltaY = event.clientY - swipeStart.y;
+    swipeStart = null;
+    if (Math.abs(deltaX) > 50 && Math.abs(deltaX) > Math.abs(deltaY)) showScreen(currentScreen + (deltaX < 0 ? 1 : -1));
+  });
+}
+
+const sectionLinks = [...document.querySelectorAll('.nav-links a[href^="#"]')];
+
+if ('IntersectionObserver' in window && sectionLinks.length) {
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      sectionLinks.forEach((link) => {
+        if (link.getAttribute('href') === `#${entry.target.id}`) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+
+  sectionLinks
+    .map((link) => document.querySelector(link.getAttribute('href')))
+    .filter(Boolean)
+    .forEach((section) => sectionObserver.observe(section));
+}
+
+// Gentle reveal of section blocks; skipped entirely when reduced motion is requested.
+if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  document.documentElement.classList.add('reveal-on');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-revealed');
+      revealObserver.unobserve(entry.target);
+    });
+  }, { rootMargin: '0px 0px -8% 0px' });
+
+  document.querySelectorAll('[data-reveal]').forEach((block) => revealObserver.observe(block));
+}
 
 languageSelect?.addEventListener('pointerdown', () => {
   languageScrollPosition = { x: window.scrollX, y: window.scrollY };

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f3f4f7" />
+    <meta name="theme-color" content="#f5f6f8" />
     <meta
       name="description"
       content="Meet SpotGo: mobile parking apps for drivers and parking teams. Find a space, manage reservations and follow parking operations."
@@ -20,7 +20,7 @@
     <header class="site-header">
       <nav class="nav-shell page-width" aria-label="Main navigation" data-i18n-aria-label="accessibility.navigation">
         <a class="brand" href="./" data-scroll-to-top aria-label="SpotGo home">
-          <img src="assets/spotgo-logo-w-bg.png" alt="" width="38" height="38" />
+          <img src="assets/spotgo-logo-w-bg.png" alt="" width="36" height="36" />
           <span>Spot<span class="brand-accent">Go</span></span>
         </a>
 
@@ -67,267 +67,281 @@
     </header>
 
     <main id="main">
-      <section class="hero page-width">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="hero.eyebrow">Two mobile apps. One easier parking experience.</span></p>
-          <h1 data-i18n-html="hero.title">Parking, made easier<br />for <em>every side.</em></h1>
-          <p class="hero-description" data-i18n="hero.description">
-            SpotGo brings drivers and parking teams together with mobile tools for finding spaces, managing reservations and keeping track of daily operations.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#apps" data-i18n="hero.primary">Explore the apps</a>
-            <a class="button button-quiet" href="#how-it-works" data-i18n="hero.secondary">How SpotGo works <span aria-hidden="true">↗</span></a>
+      <!-- Hero: a parking-level floor plan where the two real app screens are parked. -->
+      <section class="hero">
+        <div class="page-width hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="hero.eyebrow">Two mobile apps. One easier parking experience.</span></p>
+            <h1 data-i18n-html="hero.title">Parking, made easier<br />for <em>every side.</em></h1>
+            <p class="hero-description" data-i18n="hero.description">
+              SpotGo brings drivers and parking teams together with mobile tools for finding spaces, managing reservations and keeping track of daily operations.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#apps" data-i18n="hero.primary">Explore the apps</a>
+              <a class="button button-outline" href="#how-it-works" data-i18n="hero.secondary">How SpotGo works</a>
+            </div>
+            <p class="hero-note">
+              <svg class="hero-note-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <rect x="3" y="3" width="26" height="26" rx="8" />
+                <path d="M12.5 23V9.5h5a4.25 4.25 0 0 1 0 8.5h-5" />
+              </svg>
+              <span data-i18n="hero.note">A dedicated experience for Drivers and Parking Admins.</span>
+            </p>
           </div>
-          <div class="hero-note">
-            <span class="hero-note-icon" aria-hidden="true">✦</span>
-            <span data-i18n="hero.note">A dedicated experience for Drivers and Parking Admins.</span>
-          </div>
-        </div>
 
-        <div class="hero-preview" aria-label="SpotGo mobile app previews" data-i18n-aria-label="accessibility.preview">
-          <div class="preview-glow" aria-hidden="true"></div>
-          <figure class="phone-preview phone-preview-driver">
-            <img
-              src="assets/driver-app-preview.png"
-              alt="SpotGo Driver app showing nearby parking zones"
-              data-i18n-alt="images.driver"
-            />
-            <figcaption data-i18n="apps.driver.name">SpotGo Driver</figcaption>
-          </figure>
-          <figure class="phone-preview phone-preview-admin">
-            <img
-              src="assets/parking-admin-app-preview.png"
-              alt="SpotGo Parking Admin app showing an occupancy dashboard"
-              data-i18n-alt="images.admin"
-            />
-            <figcaption data-i18n="apps.admin.name">SpotGo Parking Admin</figcaption>
-          </figure>
-          <span class="preview-orbit preview-orbit-one" aria-hidden="true"></span>
+          <!-- The real screens lead; the floor plan is a quiet backdrop of bays behind them. -->
+          <div class="hero-plan" aria-label="SpotGo mobile app previews" data-i18n-aria-label="accessibility.preview">
+            <svg class="plan-drawing" viewBox="0 0 640 640" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+              <path class="plan-bays" d="M20 20h600M20 20v250M226 20v250M432 20v250M620 20v250M20 620h600M20 620V390M226 620V390M432 620V390M620 620V390" />
+              <path class="plan-lane" d="M20 330h600" />
+              <path class="plan-arrow" d="M470 304h70m-14-10 14 10-14 10" />
+              <circle class="plan-free" cx="526" cy="520" r="7" />
+            </svg>
+            <figure class="phone phone-driver">
+              <button class="screen-trigger" type="button" data-screen="driver" data-screen-name-key="apps.driver.name">
+                <img src="assets/driver-app-preview.png" alt="SpotGo Driver app showing nearby parking zones" data-i18n-alt="images.driver" width="1236" height="2940" />
+                <span class="screen-chip"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M7 2.5a4.5 4.5 0 1 0 2.8 8l3 3 1-1-3-3A4.5 4.5 0 0 0 7 2.5Zm0 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" /></svg><span data-i18n="viewer.open">Enlarge screen</span></span>
+              </button>
+              <figcaption data-i18n="apps.driver.name">SpotGo Driver</figcaption>
+            </figure>
+            <figure class="phone phone-admin">
+              <button class="screen-trigger" type="button" data-screen="admin" data-screen-name-key="apps.admin.name">
+                <img src="assets/parking-admin-app-preview.png" alt="SpotGo Parking Admin app showing an occupancy dashboard" data-i18n-alt="images.admin" width="1236" height="2940" />
+                <span class="screen-chip"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M7 2.5a4.5 4.5 0 1 0 2.8 8l3 3 1-1-3-3A4.5 4.5 0 0 0 7 2.5Zm0 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" /></svg><span data-i18n="viewer.open">Enlarge screen</span></span>
+              </button>
+              <figcaption data-i18n="apps.admin.name">SpotGo Parking Admin</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
       <section class="apps-section" id="apps">
         <div class="page-width">
-          <div class="section-heading">
-            <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="apps.eyebrow">Made for your role</span></p>
-            <h2 data-i18n="apps.title">Choose the SpotGo app for you</h2>
+          <header class="split-heading" data-reveal>
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="apps.eyebrow">Made for your role</span></p>
+              <h2 data-i18n="apps.title">Choose the SpotGo app for you</h2>
+            </div>
             <p data-i18n="apps.description">Explore what each app offers, including accessibility, language options and on-device data sync.</p>
-          </div>
+          </header>
 
-          <div class="apps-grid">
-            <article class="app-card app-card-driver">
-              <div class="app-card-copy">
-                <span class="role-label" data-i18n="apps.driver.role">For Drivers</span>
-                <h3 data-i18n="apps.driver.name">SpotGo Driver</h3>
-                <p data-i18n="apps.driver.description">Find permitted parking, manage your vehicles and reservations, and plan your visit from one app.</p>
-                <ul class="feature-list">
-                  <li data-i18n="apps.driver.feature1">Explore nearby permitted zones</li>
-                  <li data-i18n="apps.driver.feature2">Check availability and follow Google Maps routes</li>
-                  <li data-i18n="apps.driver.feature3">Manage vehicles, reservations and changes</li>
-                  <li data-i18n="apps.driver.feature4">Pay, manage subscriptions, and access receipts and invoices</li>
-                </ul>
-                <button class="store-button" type="button" disabled>
-                  <img class="play-mark" src="assets/play-store.svg" alt="" aria-hidden="true" />
-                  <span class="store-copy"><strong data-i18n="store.google">Google Play</strong></span>
+          <!-- Driver: specification sheet, the screen sits in a parking lane with its features annotated around it. -->
+          <article class="chapter chapter-driver" data-reveal aria-labelledby="driverAppTitle">
+            <div class="chapter-head">
+              <span class="role-label" data-i18n="apps.driver.role">For Drivers</span>
+              <h3 id="driverAppTitle" data-i18n="apps.driver.name">SpotGo Driver</h3>
+              <p data-i18n="apps.driver.description">Find permitted parking, manage your vehicles and reservations, and plan your visit from one app.</p>
+              <button class="store-button" type="button" disabled>
+                <img class="play-mark" src="assets/play-store.svg" alt="" aria-hidden="true" />
+                <span class="store-copy"><strong data-i18n="store.google">Google Play</strong></span>
+              </button>
+            </div>
+            <div class="spec-sheet">
+              <ul class="spec-list spec-list-start">
+                <li data-i18n="apps.driver.feature1">Explore nearby permitted zones</li>
+                <li data-i18n="apps.driver.feature2">Check availability and follow Google Maps routes</li>
+              </ul>
+              <figure class="spec-phone">
+                <button class="screen-trigger" type="button" data-screen="driver" data-screen-name-key="apps.driver.name">
+                  <img src="assets/driver-app-preview.png" alt="SpotGo Driver app screen" data-i18n-alt="images.driver" width="1236" height="2940" loading="lazy" />
+                  <span class="screen-chip"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M7 2.5a4.5 4.5 0 1 0 2.8 8l3 3 1-1-3-3A4.5 4.5 0 0 0 7 2.5Zm0 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" /></svg><span data-i18n="viewer.open">Enlarge screen</span></span>
                 </button>
-              </div>
-              <div class="app-card-visual">
-                <img
-                  src="assets/driver-app-preview.png"
-                  alt="SpotGo Driver app screen"
-                  data-i18n-alt="images.driver"
-                  loading="lazy"
-                />
-              </div>
-            </article>
+              </figure>
+              <ul class="spec-list spec-list-end">
+                <li data-i18n="apps.driver.feature3">Manage vehicles, reservations and changes</li>
+                <li data-i18n="apps.driver.feature4">Pay, manage subscriptions, and access receipts and invoices</li>
+              </ul>
+            </div>
+          </article>
 
-            <article class="app-card app-card-admin">
-              <div class="app-card-copy">
-                <span class="role-label" data-i18n="apps.admin.role">For Parking Admins</span>
-                <h3 data-i18n="apps.admin.name">SpotGo Parking Admin</h3>
-                <p data-i18n="apps.admin.description">Configure parking operations, monitor occupancy and manage guest sessions from your phone.</p>
-                <ul class="feature-list">
-                  <li data-i18n="apps.admin.feature1">Configure zones, spaces, floor plans and digital maps</li>
-                  <li data-i18n="apps.admin.feature2">Monitor occupancy, sensor status and alerts</li>
-                  <li data-i18n="apps.admin.feature3">Register guest parking sessions</li>
-                  <li data-i18n="apps.admin.feature4">Review occupancy reports and B2B billing</li>
-                </ul>
-                <button class="store-button" type="button" disabled>
-                  <img class="play-mark" src="assets/play-store.svg" alt="" aria-hidden="true" />
-                  <span class="store-copy"><strong data-i18n="store.google">Google Play</strong></span>
-                </button>
-              </div>
-              <div class="app-card-visual">
-                <img
-                  src="assets/parking-admin-app-preview.png"
-                  alt="SpotGo Parking Admin app screen"
-                  data-i18n-alt="images.admin"
-                  loading="lazy"
-                />
-              </div>
-            </article>
-          </div>
+          <!-- Parking Admin: operations console, a darker control surface with status rows. -->
+          <article class="chapter chapter-admin" data-reveal aria-labelledby="adminAppTitle">
+            <div class="console-copy">
+              <span class="role-label" data-i18n="apps.admin.role">For Parking Admins</span>
+              <h3 id="adminAppTitle" data-i18n="apps.admin.name">SpotGo Parking Admin</h3>
+              <p data-i18n="apps.admin.description">Configure parking operations, monitor occupancy and manage guest sessions from your phone.</p>
+              <ul class="console-list">
+                <li data-i18n="apps.admin.feature1">Configure zones, spaces, floor plans and digital maps</li>
+                <li data-i18n="apps.admin.feature2">Monitor occupancy, sensor status and alerts</li>
+                <li data-i18n="apps.admin.feature3">Register guest parking sessions</li>
+                <li data-i18n="apps.admin.feature4">Review occupancy reports and B2B billing</li>
+              </ul>
+              <button class="store-button store-button-dark" type="button" disabled>
+                <img class="play-mark" src="assets/play-store.svg" alt="" aria-hidden="true" />
+                <span class="store-copy"><strong data-i18n="store.google">Google Play</strong></span>
+              </button>
+            </div>
+            <figure class="console-screen">
+              <button class="screen-trigger" type="button" data-screen="admin" data-screen-name-key="apps.admin.name">
+                <img src="assets/parking-admin-app-preview.png" alt="SpotGo Parking Admin app screen" data-i18n-alt="images.admin" width="1236" height="2940" loading="lazy" />
+                <span class="screen-chip"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M7 2.5a4.5 4.5 0 1 0 2.8 8l3 3 1-1-3-3A4.5 4.5 0 0 0 7 2.5Zm0 1.5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Z" /></svg><span data-i18n="viewer.open">Enlarge screen</span></span>
+              </button>
+            </figure>
+          </article>
         </div>
       </section>
 
-      <section class="how-section page-width" id="how-it-works">
-        <div class="section-heading section-heading-left">
-          <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="how.eyebrow">A clearer way to park</span></p>
-          <h2 data-i18n="how.title">From search to arrival, with less guesswork</h2>
-          <p data-i18n="how.description">SpotGo gives Drivers a simple way to plan a parking visit and helps Parking Admins stay informed throughout the day.</p>
-        </div>
-        <div class="how-grid">
-          <article class="how-card">
-            <span class="step-number">01</span>
-            <h3 data-i18n="how.step1.title">Find a parking zone</h3>
-            <p data-i18n="how.step1.description">Explore nearby zones and compare the information available before you go.</p>
-          </article>
-          <article class="how-card">
-            <span class="step-number">02</span>
-            <h3 data-i18n="how.step2.title">Plan your visit</h3>
-            <p data-i18n="how.step2.description">Check rates and availability, then keep your reservation details close at hand.</p>
-          </article>
-          <article class="how-card">
-            <span class="step-number">03</span>
-            <h3 data-i18n="how.step3.title">Stay in the loop</h3>
-            <p data-i18n="how.step3.description">Parking Admins can review occupancy, zone status and alerts from their mobile app.</p>
-          </article>
+      <!-- How it works: a real sequence, drawn as stops along one lane. -->
+      <section class="how-section" id="how-it-works">
+        <div class="page-width">
+          <header class="split-heading" data-reveal>
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="how.eyebrow">A clearer way to park</span></p>
+              <h2 data-i18n="how.title">From search to arrival, with less guesswork</h2>
+            </div>
+            <p data-i18n="how.description">SpotGo gives Drivers a simple way to plan a parking visit and helps Parking Admins stay informed throughout the day.</p>
+          </header>
+          <ol class="route" data-reveal>
+            <li class="route-stop">
+              <span class="step-number" aria-hidden="true">01</span>
+              <h3 data-i18n="how.step1.title">Find a parking zone</h3>
+              <p data-i18n="how.step1.description">Explore nearby zones and compare the information available before you go.</p>
+            </li>
+            <li class="route-stop">
+              <span class="step-number" aria-hidden="true">02</span>
+              <h3 data-i18n="how.step2.title">Plan your visit</h3>
+              <p data-i18n="how.step2.description">Check rates and availability, then keep your reservation details close at hand.</p>
+            </li>
+            <li class="route-stop">
+              <span class="step-number" aria-hidden="true">03</span>
+              <h3 data-i18n="how.step3.title">Stay in the loop</h3>
+              <p data-i18n="how.step3.description">Parking Admins can review occupancy, zone status and alerts from their mobile app.</p>
+            </li>
+          </ol>
         </div>
       </section>
 
       <section class="product-section" id="about-product">
-        <div class="page-width">
-          <div class="section-heading">
+        <div class="page-width media-grid" data-reveal>
+          <header class="media-heading">
             <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="product.eyebrow">About the product</span></p>
             <h2 data-i18n="product.title">See SpotGo in action</h2>
             <p data-i18n="product.description">Discover how SpotGo helps Drivers find parking and gives Parking Admins mobile tools to review occupancy and daily operations.</p>
-          </div>
-
-          <!-- Product overview video, played in the page with native controls. -->
-          <div class="video-embed" data-video-embed>
-            <video
-              controls
-              playsinline
-              preload="none"
-              aria-label="SpotGo product overview video"
-              data-i18n-aria-label="video.productTitle"
-              hidden
-            >
-              <source src="assets/videos/spotgo-product-video.mp4" type="video/mp4" />
-            </video>
-            <button class="video-placeholder" type="button" data-video-play>
-              <span class="video-placeholder-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z" /></svg>
-              </span>
-              <span class="video-placeholder-label" data-i18n="video.productLabel">Product overview video</span>
-            </button>
+          </header>
+          <div class="video-frame">
+            <div class="video-embed" data-video-embed>
+              <video
+                controls
+                playsinline
+                preload="none"
+                poster="assets/videos/spotgo-product-poster.jpg"
+                aria-label="SpotGo product overview video"
+                data-i18n-aria-label="video.productTitle"
+                hidden
+              >
+                <source src="assets/videos/spotgo-product-video.mp4" type="video/mp4" />
+              </video>
+              <button class="video-placeholder" type="button" data-video-play>
+                <img class="video-cover" src="assets/videos/spotgo-product-poster.jpg" alt="" />
+                <span class="video-placeholder-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z" /></svg>
+                </span>
+                <span class="video-placeholder-label" data-i18n="video.productLabel">Product overview video</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="team-section" id="about-team">
         <div class="page-width">
-          <div class="section-heading">
-            <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="team.eyebrow">About the team</span></p>
-            <h2 data-i18n="team.title">Meet the team behind SpotGo</h2>
+          <header class="split-heading" data-reveal>
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="team.eyebrow">About the team</span></p>
+              <h2 data-i18n="team.title">Meet the team behind SpotGo</h2>
+            </div>
             <p data-i18n="team.description">Five Software Engineering students building SpotGo with different strengths, skills and perspectives.</p>
-          </div>
+          </header>
 
-          <div class="team-grid">
-            <article class="team-card">
-              <div class="team-photo-wrap">
-                <img class="team-photo" src="assets/adrian-photo.png" alt="Adrian Ruiz Mideyros" data-i18n-alt="team.member.adrian.alt" loading="lazy" decoding="async" />
+          <!-- Roster: one row per member instead of a grid of identical cards. -->
+          <div class="roster" data-reveal>
+            <article class="member">
+              <img class="member-photo" src="assets/adrian-photo.png" alt="Adrian Ruiz Mideyros" data-i18n-alt="team.member.adrian.alt" loading="lazy" decoding="async" />
+              <div class="member-id">
+                <h3 class="member-name" data-i18n="team.member.adrian.name">Adrian Ruiz Mideyros</h3>
+                <p class="member-role" data-i18n="team.member.adrian.role">App &amp; Game Developer</p>
               </div>
-              <div class="team-card-content">
-                <p class="team-role" data-i18n="team.member.adrian.role">App &amp; Game Developer</p>
-                <h3 class="team-name" data-i18n="team.member.adrian.name">Adrian Ruiz Mideyros</h3>
-                <p class="team-bio" data-i18n="team.member.adrian.bio">Software Engineering student with experience in web and video game development, working with Java, C#, Python, JavaScript, C++ and SQL.</p>
-                <ul class="team-tags" aria-label="Skills" data-i18n-aria-label="team.skills">
-                  <li>Java</li><li>C#</li><li>C++</li><li>Game Dev</li>
-                </ul>
-              </div>
+              <p class="member-bio" data-i18n="team.member.adrian.bio">Software Engineering student with experience in web and video game development, working with Java, C#, Python, JavaScript, C++ and SQL.</p>
+              <ul class="team-tags" aria-label="Skills" data-i18n-aria-label="team.skills">
+                <li>Java</li><li>C#</li><li>C++</li><li>Game Dev</li>
+              </ul>
             </article>
 
-            <article class="team-card">
-              <div class="team-photo-wrap">
-                <img class="team-photo" src="assets/nestor-photo.png" alt="Nestor Alonso Rojas Tello" data-i18n-alt="team.member.nestor.alt" loading="lazy" decoding="async" />
+            <article class="member">
+              <img class="member-photo" src="assets/nestor-photo.png" alt="Nestor Alonso Rojas Tello" data-i18n-alt="team.member.nestor.alt" loading="lazy" decoding="async" />
+              <div class="member-id">
+                <h3 class="member-name" data-i18n="team.member.nestor.name">Nestor Alonso Rojas Tello</h3>
+                <p class="member-role" data-i18n="team.member.nestor.role">Web &amp; Software Developer</p>
               </div>
-              <div class="team-card-content">
-                <p class="team-role" data-i18n="team.member.nestor.role">Web &amp; Software Developer</p>
-                <h3 class="team-name" data-i18n="team.member.nestor.name">Nestor Alonso Rojas Tello</h3>
-                <p class="team-bio" data-i18n="team.member.nestor.bio">Software Engineering student with knowledge of C++, Python, JavaScript and CSS. Collaborative and responsible, with a focus on finding practical solutions.</p>
-                <ul class="team-tags" aria-label="Skills" data-i18n-aria-label="team.skills">
-                  <li>C++</li><li>Python</li><li>JavaScript</li><li>CSS</li>
-                </ul>
-              </div>
+              <p class="member-bio" data-i18n="team.member.nestor.bio">Software Engineering student with knowledge of C++, Python, JavaScript and CSS. Collaborative and responsible, with a focus on finding practical solutions.</p>
+              <ul class="team-tags" aria-label="Skills" data-i18n-aria-label="team.skills">
+                <li>C++</li><li>Python</li><li>JavaScript</li><li>CSS</li>
+              </ul>
             </article>
 
-            <article class="team-card">
-              <div class="team-photo-wrap">
-                <img class="team-photo" src="assets/cesar-photo.png" alt="Cesar Jair Contreras Rojas" data-i18n-alt="team.member.cesar.alt" loading="lazy" decoding="async" />
+            <article class="member">
+              <img class="member-photo" src="assets/cesar-photo.png" alt="Cesar Jair Contreras Rojas" data-i18n-alt="team.member.cesar.alt" loading="lazy" decoding="async" />
+              <div class="member-id">
+                <h3 class="member-name" data-i18n="team.member.cesar.name">Cesar Jair Contreras Rojas</h3>
+                <p class="member-role" data-i18n="team.member.cesar.role">Software Developer</p>
               </div>
-              <div class="team-card-content">
-                <p class="team-role" data-i18n="team.member.cesar.role">Software Developer</p>
-                <h3 class="team-name" data-i18n="team.member.cesar.name">Cesar Jair Contreras Rojas</h3>
-                <p class="team-bio" data-i18n="team.member.cesar.bio">Software Engineering student with academic experience in Python, C++ and Java. Responsible and collaborative, and always willing to support teammates as they solve problems.</p>
-                <ul class="team-tags" aria-label="Skills" data-i18n-aria-label="team.skills">
-                  <li>Python</li><li>C++</li><li>Java</li>
-                </ul>
-              </div>
+              <p class="member-bio" data-i18n="team.member.cesar.bio">Software Engineering student with academic experience in Python, C++ and Java. Responsible and collaborative, and always willing to support teammates as they solve problems.</p>
+              <ul class="team-tags" aria-label="Skills" data-i18n-aria-label="team.skills">
+                <li>Python</li><li>C++</li><li>Java</li>
+              </ul>
             </article>
 
-            <article class="team-card">
-              <div class="team-photo-wrap">
-                <img class="team-photo" src="assets/briguite-photo.png" alt="Briguite Eryka Carhuaz Centeno" data-i18n-alt="team.member.briguite.alt" loading="lazy" decoding="async" />
+            <article class="member">
+              <img class="member-photo" src="assets/briguite-photo.png" alt="Briguite Eryka Carhuaz Centeno" data-i18n-alt="team.member.briguite.alt" loading="lazy" decoding="async" />
+              <div class="member-id">
+                <h3 class="member-name" data-i18n="team.member.briguite.name">Briguite Eryka Carhuaz Centeno</h3>
+                <p class="member-role" data-i18n="team.member.briguite.role">Frontend Design Developer</p>
               </div>
-              <div class="team-card-content">
-                <p class="team-role" data-i18n="team.member.briguite.role">Frontend Design Developer</p>
-                <h3 class="team-name" data-i18n="team.member.briguite.name">Briguite Eryka Carhuaz Centeno</h3>
-                <p class="team-bio" data-i18n="team.member.briguite.bio">Software Engineering student with experience in Java, HTML, CSS and JavaScript. Enjoys learning, collaborating and improving projects through problem solving.</p>
-                <ul class="team-tags" aria-label="Skills" data-i18n-aria-label="team.skills">
-                  <li>Java</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
-                </ul>
-              </div>
+              <p class="member-bio" data-i18n="team.member.briguite.bio">Software Engineering student with experience in Java, HTML, CSS and JavaScript. Enjoys learning, collaborating and improving projects through problem solving.</p>
+              <ul class="team-tags" aria-label="Skills" data-i18n-aria-label="team.skills">
+                <li>Java</li><li>HTML</li><li>CSS</li><li>JavaScript</li>
+              </ul>
             </article>
 
-            <article class="team-card">
-              <div class="team-photo-wrap">
-                <img class="team-photo" src="assets/sofia-photo.png" alt="Sofia Alessandra Cotrina Siclla" data-i18n-alt="team.member.sofia.alt" loading="lazy" decoding="async" />
+            <article class="member">
+              <img class="member-photo" src="assets/sofia-photo.png" alt="Sofia Alessandra Cotrina Siclla" data-i18n-alt="team.member.sofia.alt" loading="lazy" decoding="async" />
+              <div class="member-id">
+                <h3 class="member-name" data-i18n="team.member.sofia.name">Sofia Alessandra Cotrina Siclla</h3>
+                <p class="member-role" data-i18n="team.member.sofia.role">Frontend &amp; Web Developer</p>
               </div>
-              <div class="team-card-content">
-                <p class="team-role" data-i18n="team.member.sofia.role">Frontend &amp; Web Developer</p>
-                <h3 class="team-name" data-i18n="team.member.sofia.name">Sofia Alessandra Cotrina Siclla</h3>
-                <p class="team-bio" data-i18n="team.member.sofia.bio">Software Engineering student with knowledge of C++, C#, Python and Java, focused on frontend development and Figma design.</p>
-                <ul class="team-tags" aria-label="Skills" data-i18n-aria-label="team.skills">
-                  <li>C++</li><li>C#</li><li>Python</li><li>Java</li>
-                </ul>
-              </div>
+              <p class="member-bio" data-i18n="team.member.sofia.bio">Software Engineering student with knowledge of C++, C#, Python and Java, focused on frontend development and Figma design.</p>
+              <ul class="team-tags" aria-label="Skills" data-i18n-aria-label="team.skills">
+                <li>C++</li><li>C#</li><li>Python</li><li>Java</li>
+              </ul>
             </article>
           </div>
 
-          <div class="team-video">
-            <div class="team-video-heading">
+          <div class="team-video media-grid media-grid-reverse" data-reveal>
+            <header class="media-heading">
               <h3 data-i18n="team.video.title">Meet us in person</h3>
               <p data-i18n="team.video.description">A quick look at who we are and what we are building.</p>
-            </div>
-            <!-- Team video, played in the page with native controls. -->
-            <div class="video-embed" data-video-embed>
-              <video
-                controls
-                playsinline
-                preload="none"
-                aria-label="SpotGo team video"
-                data-i18n-aria-label="video.teamTitle"
-                hidden
-              >
-                <source src="assets/videos/spotgo-team-video.mp4" type="video/mp4" />
-              </video>
-              <button class="video-placeholder" type="button" data-video-play>
-                <span class="video-placeholder-icon" aria-hidden="true">
-                  <svg viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z" /></svg>
-                </span>
-                <span class="video-placeholder-label" data-i18n="video.teamLabel">Meet the team video</span>
-              </button>
+            </header>
+            <div class="video-frame">
+              <div class="video-embed" data-video-embed>
+                <video
+                  controls
+                  playsinline
+                  preload="none"
+                  poster="assets/videos/spotgo-team-poster.jpg"
+                  aria-label="SpotGo team video"
+                  data-i18n-aria-label="video.teamTitle"
+                  hidden
+                >
+                  <source src="assets/videos/spotgo-team-video.mp4" type="video/mp4" />
+                </video>
+                <button class="video-placeholder" type="button" data-video-play>
+                  <img class="video-cover" src="assets/videos/spotgo-team-poster.jpg" alt="" />
+                  <span class="video-placeholder-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="m9 6 10 6-10 6z" /></svg>
+                  </span>
+                  <span class="video-placeholder-label" data-i18n="video.teamLabel">Meet the team video</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -335,12 +349,12 @@
 
       <section class="faq-section" id="faq">
         <div class="page-width faq-layout">
-          <div class="section-heading section-heading-left">
+          <header class="faq-heading">
             <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="faq.eyebrow">Questions, answered</span></p>
             <h2 data-i18n="faq.title">Questions about using SpotGo</h2>
             <p data-i18n="faq.description">Answers for Drivers and Parking Admins.</p>
-          </div>
-          <div class="faq-list">
+          </header>
+          <div class="faq-list" data-reveal>
             <details class="faq-item">
               <summary data-i18n="faq.find.question">How do I find available parking?</summary>
               <p data-i18n="faq.find.answer">In SpotGo Driver, explore nearby parking zones, check availability and rates, and review the details before choosing where to park.</p>
@@ -364,16 +378,15 @@
           </div>
         </div>
       </section>
-
     </main>
 
     <footer class="site-footer">
       <div class="page-width footer-content">
         <a class="brand footer-brand" href="./" data-scroll-to-top aria-label="SpotGo home">
-          <img src="assets/spotgo-logo.png" alt="" width="38" height="38" />
+          <img src="assets/spotgo-logo.png" alt="" width="44" height="44" />
           <span>Spot<span class="brand-accent">Go</span></span>
         </a>
-        <p data-i18n="footer.tagline">Mobile parking tools for Drivers and Parking Admins.</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">Mobile parking tools for Drivers and Parking Admins.</p>
         <div class="footer-links">
           <a href="#apps" data-i18n="nav.apps">The apps</a>
           <a href="#how-it-works" data-i18n="nav.how">How it works</a>
@@ -403,7 +416,7 @@
               <span class="store-copy"><strong data-i18n="store.google">Google Play</strong></span>
             </button>
           </article>
-          <article class="dialog-app-card">
+          <article class="dialog-app-card dialog-app-card-admin">
             <span class="dialog-app-icon dialog-app-icon-admin" aria-hidden="true">P</span>
             <h3 data-i18n="apps.admin.name">SpotGo Parking Admin</h3>
             <p data-i18n="apps.admin.short">Follow occupancy and parking operations.</p>
@@ -413,6 +426,31 @@
             </button>
           </article>
         </div>
+      </div>
+    </dialog>
+
+    <!-- Screen viewer: the real app screenshots enlarged, scrollable, with previous/next navigation. -->
+    <dialog class="screen-viewer" id="screenViewer" aria-labelledby="screenViewerTitle">
+      <div class="viewer-shell">
+        <header class="viewer-bar">
+          <p class="viewer-title" id="screenViewerTitle"></p>
+          <p class="viewer-count" aria-live="polite"></p>
+          <button class="viewer-close" type="button" aria-label="Close dialog" data-i18n-aria-label="accessibility.close">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8" /></svg>
+          </button>
+        </header>
+        <div class="viewer-stage">
+          <button class="viewer-nav viewer-prev" type="button" aria-label="Previous screen" data-i18n-aria-label="viewer.previous">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3 5 8l5 5" /></svg>
+          </button>
+          <div class="viewer-scroll" tabindex="0">
+            <img class="viewer-image" src="assets/driver-app-preview.png" alt="" width="1236" height="2940" draggable="false" />
+          </div>
+          <button class="viewer-nav viewer-next" type="button" aria-label="Next screen" data-i18n-aria-label="viewer.next">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="m6 3 5 5-5 5" /></svg>
+          </button>
+        </div>
+        <p class="viewer-hint" data-i18n="viewer.hint">Scroll to see the full screen. Use the arrow keys or swipe to switch screens.</p>
       </div>
     </dialog>
   </body>
